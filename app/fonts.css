@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'NeueHaasGroteskDisplay';
+  src: url('/fonts/neue-haas-grotesk-display-link.rtf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Norwester';
+  src: url('/fonts/norwester.otf') format('opentype');
+}

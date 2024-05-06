@@ -1,0 +1,54 @@
+import { ComponentProps } from './types';
+
+export default function Welcome({ debug }: ComponentProps) {
+  const debugBorder = debug ? "border border-red-500" : "";
+  return (
+    <>
+      <div className={`
+        flex flex-wrap
+        md:mr-40
+        ${debugBorder}
+      `}>
+        <div className={`
+          flex-grow-0 flex-shrink
+          w-3/8 ml-auto
+          md:pt-[20%]
+          font-bold text-3x1 text-left
+          ${debugBorder}
+        `}>
+          {/* section 1 */}
+          Welcome to the World of WASSP Multibeam
+        </div>
+      </div>
+      <div className={`
+        flex flex-wrap
+        md:mr-40
+        ${debugBorder}
+      `}>
+        <div className={`
+          flex-grow-0 flex-shrink
+          w-1/8 ml-auto
+          ${debugBorder}
+        `}>
+          {/* section 2 */}
+          01
+        </div>
+        <div className={`
+          flex-grow-0 flex-shrink
+          ${debugBorder}
+        `}>
+          {/* section 3 */}
+          about wassp
+        </div>
+        <div className={`
+          flex-grow flex-shrink
+          ${debugBorder}
+        `}>
+          {/* section 4 */}
+          WASSP, a powerful multi-beam sounder with 120-degree coverage and models for deep exploration, offers unparalleled accuracy, detail, and versatility. Target fish with steerable sounders, generate real-time 3D charts, map fish in water, and make better decisions with the user-friendly advanced mode.
+        </div>
+
+      </div>
+    </>
+  );
+}

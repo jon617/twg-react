@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Use the default font (NeueHaasGroteskDisplay) */
+.font-sans {
+  font-family: var(--font-sans);
+}
+/* Use the Norwester font */
+.font-norwester {
+  font-family: var(--font-norwester);
+}
+
+.fade-left {
+  position: relative;
+}
+.fade-left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(to right, black, transparent);
+}
+
+.fade-right {
+  position: relative;
+}
+
+.fade-right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(to left, black, transparent);
+}
+
+:root {
+  /* --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255; */
+}
+
+@media (prefers-color-scheme: dark) {
+  /* :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  } */
+}
+
+body {
+  /* color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+}
+
+@layer utilities {
+  /* .text-balance {
+    text-wrap: balance;
+  } */
+}
